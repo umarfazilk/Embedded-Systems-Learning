@@ -1,127 +1,83 @@
 <div align="center">
 
-# 🚀 30 Days Embedded Systems Roadmap
+# 🚀 Day 01 — Microcontroller Fundamentals
 
-## 📅 Day 01 — Microcontroller Fundamentals
+### 📘 Topic: Introduction to Microcontrollers and Embedded Systems
 
-*A structured journey to master Embedded Systems from the ground up.*
+*Building the foundation for Embedded Systems and Firmware Development.*
 
-![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 ![Day](https://img.shields.io/badge/Day-01-blue?style=for-the-badge)
-![Topic](https://img.shields.io/badge/Topic-Microcontroller-orange?style=for-the-badge)
-![Language](https://img.shields.io/badge/Embedded-C-informational?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
+![Difficulty](https://img.shields.io/badge/Difficulty-Beginner-green?style=for-the-badge)
+![Category](https://img.shields.io/badge/Category-Embedded%20Systems-orange?style=for-the-badge)
 
 ---
 
-*"The strongest firmware engineers don't memorize code—they understand hardware."*
+*"Every embedded system starts with understanding the hardware that runs the software."*
 
 </div>
 
 ---
 
-# 📖 Table of Contents
+# 📖 Overview
 
-- [🎯 Learning Objectives](#-learning-objectives)
-- [📌 What is a Microcontroller?](#-1-what-is-a-microcontroller)
-- [⚡ Microcontroller vs Microprocessor](#-2-microcontroller-vs-microprocessor)
-- [🏗 Microcontroller Architecture](#-3-microcontroller-architecture)
-- [🧠 CPU, ALU & Registers](#-4-cpu-alu--registers)
-- [💾 Memory Types](#-5-memory-types)
-- [🗺 Memory Map](#-6-memory-map)
-- [⚙ Development Flow](#-7-development-flow)
-- [📋 Interview Questions](#-interview-questions)
-- [📝 Summary](#-summary)
-- [📚 References](#-references)
-- [➡ Next Topic](#-next-topic)
+Welcome to **Day 01** of my Embedded Systems Learning Journey.
+
+Today's objective was to understand the **building blocks of every embedded system**—the **Microcontroller**.
+
+Instead of jumping directly into programming, I focused on understanding how a microcontroller is organized internally, how memory is structured, and how firmware eventually executes on hardware.
+
+By mastering these fundamentals first, future topics such as GPIO, Timers, UART, SPI, I²C, ADC, Interrupts, and RTOS become much easier to understand.
 
 ---
 
 # 🎯 Learning Objectives
 
-After completing today's learning, I should be able to:
+After completing Day 01, I can:
 
 - ✅ Explain what a Microcontroller is
-- ✅ Differentiate MCU and MPU
-- ✅ Understand MCU Architecture
-- ✅ Explain CPU components
-- ✅ Understand different Memory Types
-- ✅ Read a Memory Map
-- ✅ Explain the Embedded Development Flow
+- ✅ Differentiate between MCU and MPU
+- ✅ Understand the internal architecture of an MCU
+- ✅ Explain CPU, ALU and Registers
+- ✅ Understand Flash, SRAM, EEPROM and ROM
+- ✅ Read a basic Memory Map
+- ✅ Explain the Embedded Firmware Development Flow
 
 ---
 
-# 📌 1. What is a Microcontroller?
+# 📚 Topics Covered
 
-> **Definition**
-
-A **Microcontroller (MCU)** is a compact computer integrated into a single Integrated Circuit (IC). It combines a processor, memory, and peripherals to perform dedicated control tasks efficiently.
-
-Unlike a desktop processor, a microcontroller is designed for **real-time embedded applications** where low power consumption, reliability, and deterministic operation are essential.
+- What is a Microcontroller?
+- Microcontroller vs Microprocessor
+- Internal Architecture
+- CPU, ALU and Registers
+- Memory Types
+- Memory Map
+- Firmware Development Flow
 
 ---
 
-## 📦 Internal Components
+# 📌 What is a Microcontroller?
 
-```text
-                 Microcontroller
-                       │
- ┌─────────────────────┼─────────────────────┐
- │                     │                     │
-CPU                 Memory             Peripherals
- │               Flash / SRAM       GPIO UART SPI
- │                                     I²C ADC Timer
+A **Microcontroller (MCU)** is a compact computer integrated into a single Integrated Circuit (IC).
+
+It combines:
+
+- CPU
+- Flash Memory
+- SRAM
+- GPIO
+- Timers
+- Communication Interfaces
+- Analog Peripherals
+
+Unlike a computer processor, a microcontroller is designed for performing a **specific task repeatedly** while consuming very little power.
+
+---
+
+# 🏗 Internal Architecture
+
 ```
-
----
-
-## 🌍 Real World Applications
-
-| Application | Purpose |
-|-------------|---------|
-| Washing Machine | Motor Control |
-| Smart Watch | Sensor Processing |
-| Air Conditioner | Temperature Control |
-| Drone | Flight Controller |
-| Car ECU | Engine Control |
-| IoT Devices | Data Collection |
-
----
-
-> 💡 **Remember**
-
-A Microcontroller is a **complete computer on one chip.**
-
----
-
-# ⚡ 2. Microcontroller vs Microprocessor
-
-| Feature | Microcontroller | Microprocessor |
-|----------|----------------|---------------|
-| CPU | ✅ | ✅ |
-| Flash | Built-in | External |
-| RAM | Built-in | External |
-| GPIO | Built-in | External |
-| Cost | Low | High |
-| Power Consumption | Low | High |
-| Applications | Embedded Systems | PCs & Servers |
-
----
-
-## 📌 Quick Analogy
-
-Think of a Microcontroller like a **Swiss Army Knife**.
-
-Everything is inside one device.
-
-A Microprocessor is like a **Desktop PC**.
-
-You need external RAM, Storage, GPU and peripherals.
-
----
-
-# 🏗 3. Microcontroller Architecture
-
-```text
                      +----------------+
                      |      CPU       |
                      +--------+-------+
@@ -139,124 +95,83 @@ You need external RAM, Storage, GPU and peripherals.
 
 ---
 
-## 📖 Components
+# ⚡ MCU vs MPU
 
-### 🧠 CPU
-
-Executes Instructions.
-
----
-
-### 💾 Flash
-
-Stores Firmware.
-
----
-
-### ⚡ SRAM
-
-Stores Runtime Variables.
+| Feature | Microcontroller | Microprocessor |
+|----------|----------------|---------------|
+| CPU | ✅ | ✅ |
+| RAM | Internal | External |
+| Flash | Internal | External |
+| GPIO | Internal | External |
+| Cost | Low | High |
+| Power | Low | High |
+| Applications | Embedded Systems | Computers |
 
 ---
 
-### 🔌 GPIO
-
-Communicates with LEDs, Buttons and Sensors.
-
----
-
-### ⏱ Timers
-
-Generate Delays, PWM and Measure Time.
-
----
-
-### 📡 UART / SPI / I²C
-
-Communication Interfaces.
-
----
-
-# 🧠 4. CPU, ALU & Registers
+# 🧠 CPU, ALU & Registers
 
 ## CPU
 
-The CPU continuously executes instructions stored inside Flash Memory.
-
-Every instruction follows this cycle:
-
-```text
-Fetch
-   │
-Decode
-   │
-Execute
-```
+The CPU executes every instruction stored inside Flash memory.
 
 ---
 
 ## ALU
 
-The Arithmetic Logic Unit performs:
+Responsible for
 
 - Addition
 - Subtraction
-- Multiplication
 - Comparison
-- AND
-- OR
-- XOR
+- Logical Operations
 
 ---
 
 ## Registers
 
-Registers are tiny high-speed memories inside the CPU.
+Registers are the fastest memory inside the processor.
 
 Examples:
 
 - Program Counter (PC)
 - Stack Pointer (SP)
-- Status Register
 - General Purpose Registers
+- Status Register
 
 ---
 
-# 💾 5. Memory Types
+## Instruction Cycle
 
-| Memory | Stores | Volatile | Speed |
-|---------|--------|-----------|------|
-| Flash | Firmware | ❌ | Medium |
-| SRAM | Variables | ✅ | Very Fast |
-| EEPROM | Settings | ❌ | Slow |
-| ROM | Permanent Data | ❌ | Medium |
-| DRAM | Computer Memory | ✅ | Fast |
-
----
-
-## Memory Hierarchy
-
-```text
-Registers
-    ↓
-SRAM
-    ↓
-Flash
-    ↓
-External Storage
+```
+Fetch
+   ↓
+Decode
+   ↓
+Execute
 ```
 
-The closer the memory is to the CPU, the faster it is.
+This process repeats continuously while the microcontroller is powered.
 
 ---
 
-# 🗺 6. Memory Map
+# 💾 Memory Types
 
-Every peripheral occupies a unique memory address.
+| Memory | Purpose | Volatile |
+|---------|---------|-----------|
+| Flash | Stores Firmware | ❌ |
+| SRAM | Variables | ✅ |
+| EEPROM | Configuration | ❌ |
+| ROM | Permanent Data | ❌ |
+| DRAM | Computer RAM | ✅ |
+
+---
+
+# 🗺 Memory Map
 
 Example:
 
-```text
+```
 0x08000000  → Flash
 
 0x20000000  → SRAM
@@ -264,97 +179,112 @@ Example:
 0x40000000  → Peripherals
 ```
 
-This concept is known as **Memory-Mapped I/O**.
+The CPU communicates with peripherals by accessing these memory addresses.
 
-Instead of talking directly to hardware, the CPU reads from and writes to memory addresses assigned to hardware registers.
+This technique is called **Memory-Mapped I/O**.
 
 ---
 
-# ⚙ 7. Development Flow
+# ⚙ Firmware Development Flow
 
-```text
-Write Embedded C Code
-          │
-          ▼
-     Preprocessor
-          │
-          ▼
-       Compiler
-          │
-          ▼
-      Assembler
-          │
-          ▼
-        Linker
-          │
-          ▼
-     ELF / HEX / BIN
-          │
-          ▼
- Flash using ST-Link
-          │
-          ▼
- MCU Starts Executing
 ```
+Embedded C Code
+        │
+        ▼
+Preprocessor
+        │
+        ▼
+Compiler
+        │
+        ▼
+Assembler
+        │
+        ▼
+Linker
+        │
+        ▼
+HEX / BIN File
+        │
+        ▼
+Flash to MCU
+        │
+        ▼
+Program Executes
+```
+
+---
+
+# 🌍 Real World Applications
+
+Microcontrollers are found in:
+
+- Washing Machines
+- Smart Watches
+- Air Conditioners
+- Automotive ECUs
+- IoT Devices
+- Medical Equipment
+- Industrial Automation
+- Drones
+- Robotics
+
+---
+
+# 💡 Key Takeaways
+
+- A Microcontroller is a complete computer on one chip.
+- Flash stores firmware permanently.
+- SRAM stores runtime variables.
+- Registers are the fastest memory inside the CPU.
+- Firmware executes using the Fetch → Decode → Execute cycle.
+- Hardware peripherals are controlled using Memory-Mapped I/O.
 
 ---
 
 # 📋 Interview Questions
 
-<details>
-
-<summary>Click to View</summary>
-
-### Beginner
+### Basic
 
 - What is a Microcontroller?
 - Difference between MCU and MPU?
 - What is Flash Memory?
 - What is SRAM?
-- Why is SRAM Volatile?
-- What is EEPROM?
 - Explain Memory-Mapped I/O.
-- What is a Register?
-- Explain the Instruction Cycle.
+- What is EEPROM?
+- Explain Registers.
 - What is the Program Counter?
 
 ### Intermediate
 
-- Why is Flash slower than SRAM?
-- Why are Registers faster than SRAM?
-- Explain Stack vs Heap.
-- Why are peripherals mapped into memory?
+- Why is SRAM faster than Flash?
 - Explain the firmware compilation process.
-
-</details>
+- Explain Stack and Heap.
+- Why are peripherals memory mapped?
 
 ---
 
-# 📝 Summary
+# 📊 Visual Summary
 
-✅ MCU = CPU + Memory + Peripherals
+The complete visual summary for today's learning is available below.
 
-✅ Flash stores Firmware
+```
+Reference/
+└── microcontroller-fundamentals-overview.png
+```
 
-✅ SRAM stores Runtime Variables
-
-✅ CPU executes Fetch → Decode → Execute
-
-✅ Memory Map assigns addresses to Memories and Peripherals
-
-✅ Embedded programs are converted into machine code before execution
+> Open the image for a quick revision of all concepts covered in Day 01.
 
 ---
 
 # 📚 References
 
-### Books
+## Books
 
-- 📖 *Making Embedded Systems* — Elecia White
-- 📖 *The Definitive Guide to ARM Cortex-M3/M4* — Joseph Yiu
-- 📖 *Embedded Systems: Introduction to ARM Cortex-M* — Jonathan Valvano
+- Making Embedded Systems — Elecia White
+- The Definitive Guide to ARM Cortex-M Processors — Joseph Yiu
+- Embedded Systems: Introduction to ARM Cortex-M Microcontrollers — Jonathan Valvano
 
-### Documentation
+## Documentation
 
 - STM32 Reference Manual
 - STM32 Datasheet
@@ -362,17 +292,29 @@ Write Embedded C Code
 
 ---
 
+# 🎯 Day 01 Status
+
+| Topic | Status |
+|--------|:------:|
+| Theory | ✅ |
+| Architecture | ✅ |
+| Memory | ✅ |
+| Development Flow | ✅ |
+| Revision Image | ✅ |
+
+---
+
 # ➡ Next Topic
 
-## 📅 Day 02 — GPIO (General Purpose Input Output)
+**Day 02 — GPIO (General Purpose Input/Output)**
 
-We'll learn:
+Topics to Learn:
 
-- Digital Inputs
-- Digital Outputs
-- Pull-Up & Pull-Down Resistors
-- Push-Pull vs Open-Drain
 - GPIO Registers
+- Input Mode
+- Output Mode
+- Pull-up & Pull-down
+- Push-Pull vs Open-Drain
 - LED Blinking
 - Button Interfacing
 
@@ -380,8 +322,8 @@ We'll learn:
 
 <div align="center">
 
-### ⭐ Day 01 Complete
+## ⭐ Day 01 Completed Successfully
 
-*"A strong foundation is the first step toward mastering Embedded Systems."*
+*"Strong embedded engineers build strong fundamentals before writing firmware."*
 
 </div>
