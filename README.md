@@ -2,49 +2,56 @@
 
 # 🚀 Embedded Systems Learning Journey
 
-### A Structured Journey to Master Embedded Systems & Firmware Engineering
+### *A Structured Roadmap to Master Embedded Systems & Firmware Engineering*
 
-[![Progress](https://img.shields.io/badge/Progress-Day%2001-success?style=for-the-badge)]()
-[![Language](https://img.shields.io/badge/Language-Embedded%20C-blue?style=for-the-badge)]()
-[![Platform](https://img.shields.io/badge/Platform-STM32%20%7C%20ESP32-orange?style=for-the-badge)]()
-[![Status](https://img.shields.io/badge/Status-Learning-brightgreen?style=for-the-badge)]()
+<p>
+<img src="https://img.shields.io/badge/Progress-2%2F30-success?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Language-Embedded%20C-blue?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Platform-STM32%20%7C%20ESP32-orange?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Status-Learning-brightgreen?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Documentation-Daily-important?style=for-the-badge"/>
+</p>
 
 ---
 
-*"Learning Embedded Systems one concept at a time."*
+> **"Every Embedded Expert once started by blinking their first LED."**
+
+📅 Started: **Day 01**
+
+📈 Current Progress: **2 / 30 Days**
+
+⭐ Goal: Become an Embedded Systems & Firmware Engineer
 
 </div>
 
 ---
 
-# 📖 About this Repository
+# 📖 About
 
-This repository documents my journey of learning **Embedded Systems** from the ground up.
+This repository documents my **30-Day Embedded Systems Learning Journey**.
 
-Rather than collecting scattered notes, I wanted to create a structured knowledge base that I can revisit anytime. Every topic is organized into its own folder with concise documentation and a visual summary, making revision easier and tracking my learning progress over time.
+Instead of collecting random notes, I am creating a structured and easy-to-revise knowledge base covering Embedded Systems from fundamentals to firmware development.
 
-The goal is to build a strong foundation in:
+Each day contains only two files:
 
-- Embedded Systems
-- Microcontrollers
-- Embedded C Programming
-- ARM Cortex-M Architecture
-- STM32 Development
-- Peripheral Programming
-- Communication Protocols
-- Real-Time Operating Systems (RTOS)
-- Firmware Development
+- 📄 README.md
+- 🖼️ Reference Image
+
+This keeps the repository simple, organized, and revision-friendly.
 
 ---
 
-# 🎯 Objectives
+# 🎯 Goals
 
-- Build a solid understanding of Embedded Systems.
-- Learn concepts from fundamentals to advanced topics.
-- Maintain consistent documentation of my learning.
-- Create a quick revision resource for future reference.
-- Improve technical writing and documentation skills.
-- Build a portfolio that reflects my learning journey.
+- ✅ Build strong Embedded fundamentals
+- ✅ Master Embedded C
+- ✅ Learn ARM Cortex-M Architecture
+- ✅ Learn STM32 Peripheral Programming
+- ✅ Understand Communication Protocols
+- ✅ Learn RTOS
+- ✅ Build Real Projects
+- ✅ Improve Technical Documentation
+- ✅ Build an Open Source Knowledge Base
 
 ---
 
@@ -57,110 +64,190 @@ Embedded-Systems-Learning
 │
 ├── Day-01-Microcontroller-Fundamentals
 │   ├── README.md
-│   └── Reference
-│       └── microcontroller-fundamentals-overview.png
+│   └── Reference/
 │
 ├── Day-02-GPIO
 │   ├── README.md
-│   └── Reference
-│       └── gpio-overview.png
+│   └── Reference/
 │
 ├── Day-03-Binary-and-Registers
 │   ├── README.md
-│   └── Reference
-│       └── binary-registers-overview.png
+│   └── Reference/
 │
 └── ...
 ```
 
 ---
 
-# 📅 Learning Roadmap
+# 🗺️ Learning Roadmap
 
 | Day | Topic | Status |
-|------|-------------------------------|:------:|
-| 01 | Microcontroller Fundamentals | ✅ |
-| 02 | GPIO | ⏳ |
-| 03 | Binary & Registers | ⏳ |
-| 04 | Clock & Reset | ⏳ |
-| 05 | Timers | ⏳ |
-| 06 | Interrupts | ⏳ |
-| 07 | NVIC | ⏳ |
-| 08 | UART | ⏳ |
-| 09 | SPI | ⏳ |
-| 10 | I²C | ⏳ |
-| 11 | ADC | ⏳ |
-| 12 | DAC | ⏳ |
-| 13 | PWM | ⏳ |
-| 14 | DMA | ⏳ |
-| 15 | Watchdog Timer | ⏳ |
-| 16 | Memory Management | ⏳ |
-| 17 | Boot Process | ⏳ |
-| 18 | ARM Cortex-M Architecture | ⏳ |
-| 19 | CMSIS | ⏳ |
-| 20 | STM32 HAL | ⏳ |
-| 21 | Bare Metal Programming | ⏳ |
-| 22 | Embedded C Best Practices | ⏳ |
-| 23 | Low Power Modes | ⏳ |
-| 24 | Debugging Techniques | ⏳ |
-| 25 | RTOS Basics | ⏳ |
-| 26 | FreeRTOS Tasks | ⏳ |
-| 27 | Queues & Semaphores | ⏳ |
-| 28 | Communication Project | ⏳ |
-| 29 | Sensor Integration | ⏳ |
-| 30 | Final Embedded Project | ⏳ |
+|:---:|-------------------------------|:------:|
+| ✅ 01 | Microcontroller Fundamentals | Completed |
+| ✅ 02 | GPIO | Completed |
+| ⏳ 03 | Binary Numbers & Registers | Upcoming |
+| ⏳ 04 | Clock & Reset | Upcoming |
+| ⏳ 05 | Timers | Upcoming |
+| ⏳ 06 | Interrupts | Upcoming |
+| ⏳ 07 | NVIC | Upcoming |
+| ⏳ 08 | UART | Upcoming |
+| ⏳ 09 | SPI | Upcoming |
+| ⏳ 10 | I²C | Upcoming |
+| ⏳ 11 | ADC | Upcoming |
+| ⏳ 12 | DAC | Upcoming |
+| ⏳ 13 | PWM | Upcoming |
+| ⏳ 14 | DMA | Upcoming |
+| ⏳ 15 | Watchdog Timer | Upcoming |
+| ⏳ 16 | Memory Management | Upcoming |
+| ⏳ 17 | Boot Process | Upcoming |
+| ⏳ 18 | ARM Cortex-M Architecture | Upcoming |
+| ⏳ 19 | CMSIS | Upcoming |
+| ⏳ 20 | STM32 HAL | Upcoming |
+| ⏳ 21 | Bare Metal Programming | Upcoming |
+| ⏳ 22 | Embedded C Best Practices | Upcoming |
+| ⏳ 23 | Low Power Modes | Upcoming |
+| ⏳ 24 | Debugging Techniques | Upcoming |
+| ⏳ 25 | RTOS Basics | Upcoming |
+| ⏳ 26 | FreeRTOS Tasks | Upcoming |
+| ⏳ 27 | Queues & Semaphores | Upcoming |
+| ⏳ 28 | Communication Project | Upcoming |
+| ⏳ 29 | Sensor Integration | Upcoming |
+| ⏳ 30 | Final Embedded Project | Upcoming |
 
 ---
 
-# 📚 Daily Documentation Format
+# 📊 Overall Progress
 
-Each day's folder contains only two files:
-
-- 📄 **README.md** — Complete notes, explanations, and revision material.
-- 🖼️ **Reference Image** — A visual summary of the day's concepts.
-
-This simple structure keeps the repository clean, consistent, and easy to navigate.
+```text
+████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 2/30 Days (6.7%)
+```
 
 ---
 
-# 🎯 Learning Philosophy
+# 🧠 Topics Covered
 
-My goal is not just to complete a roadmap but to understand how embedded systems work internally.
+### ✅ Day 01
 
-I believe that learning is more effective when concepts are documented in my own words and reviewed regularly. This repository serves as both a learning journal and a long-term reference.
+- Microcontroller
+- CPU
+- Registers
+- Memory Types
+- Memory Map
+- Firmware Development Flow
 
 ---
 
-# 🛠️ Technologies
+### ✅ Day 02
+
+- GPIO
+- Input vs Output
+- Logic HIGH / LOW
+- Active HIGH / LOW
+- Floating Inputs
+- Pull-up & Pull-down
+- Push-Pull vs Open-Drain
+- GPIO Registers
+- Logic Levels
+- GPIO Protection
+
+---
+
+# 📅 Daily Documentation Format
+
+Every day's folder contains only:
+
+```
+README.md
+
+Reference/
+    summary.png
+```
+
+This makes revision fast and keeps the repository clean.
+
+---
+
+# 💻 Technologies
 
 - Embedded C
 - STM32
 - ESP32
 - ARM Cortex-M
-- Git & GitHub
+- Git
+- GitHub
 - VS Code
 - STM32CubeIDE
 - KiCad
 
 ---
 
-# 📈 Progress
+# 📈 Learning Workflow
 
-**Current Day:** Day 01  
-**Completed:** 1 / 30
+```text
+Learn Theory
+      │
+      ▼
+Take Notes
+      │
+      ▼
+Create README
+      │
+      ▼
+Create Summary Image
+      │
+      ▼
+Push to GitHub
+      │
+      ▼
+Daily Revision
+```
+
+---
+
+# 🎯 Repository Highlights
+
+✅ Beginner Friendly
+
+✅ Structured Learning
+
+✅ Daily Documentation
+
+✅ Visual Revision Notes
+
+✅ Industry Concepts
+
+✅ Interview Preparation
+
+✅ Practical Examples
+
+---
+
+# 📌 Current Status
+
+| Item | Progress |
+|------|----------|
+| Current Day | **02 / 30** |
+| Completed | **2 Topics** |
+| Next Topic | Binary Numbers & Registers |
+| Documentation | In Progress |
+| Revision | Daily |
 
 ---
 
 # 🤝 Contributions
 
-This repository is primarily a personal learning journal. However, if you notice an error or have suggestions to improve the documentation, feel free to open an issue or submit a pull request.
+Suggestions, corrections, and improvements are always welcome.
+
+Feel free to fork the repository, open an issue, or submit a pull request.
 
 ---
 
 <div align="center">
 
-### ⭐ Thank you for visiting!
+# ⭐ Thanks for visiting!
 
-**"Small progress every day leads to big results."**
+### *Learning one register at a time.*
+
+🚀 **See you in Day 03!**
 
 </div>
